@@ -4,17 +4,14 @@
 //               2*2                 3*3              4*4
 //               2*2*2               3*3*3            4*4*4
 
-num = 2;
-
+let num = 4;
 str = "";
-a = "";
-b = "";
-i = 2;
-
-while (num <= 4) {
-  str = num +i;
-  a = num * num;
-  b = num * num * num * i;
+let i = 1;
+let sum = 1;
+while (i <= 3) {
+  sum = sum * num;
+str=`${str}${sum}`
   i++;
 }
-console.log(`${i + a * b}`)
+
+console.log(str)
